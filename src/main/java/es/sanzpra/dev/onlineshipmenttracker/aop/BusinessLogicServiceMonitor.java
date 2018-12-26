@@ -15,7 +15,7 @@ public class BusinessLogicServiceMonitor {
 	
 	Logger logger = LoggerFactory.getLogger(BusinessLogicServiceMonitor.class);
 	
-	@AfterReturning(pointcut = "execution(* es.packlink.dev.onlineshipmenttracker.service.BusinessLogicService.eventBuilder(..))", returning = "shipmentStatus")
+	@AfterReturning(pointcut = "execution(* es.sanzpra.dev.onlineshipmenttracker.service.BusinessLogicService.eventBuilder(..))", returning = "shipmentStatus")
 	public void afterAMethod(JoinPoint joinPoint, Object shipmentStatus) {
 		if (shipmentStatus!= null) {
 			logger.info("Aspect> after business Logic");
@@ -25,7 +25,7 @@ public class BusinessLogicServiceMonitor {
 		}
 	 }
 	
-	@Before("execution(public * es.packlink.dev.onlineshipmenttracker.event.ShipmentStatusEventPublisher.printAndPublishEvent(..))")
+	@Before("execution(public * es.sanzpra.dev.onlineshipmenttracker.event.ShipmentStatusEventPublisher.printAndPublishEvent(..))")
 	public void afterAMethod(JoinPoint joinPoint) {
 		logger.info("Aspect> before printAndPublishEvent");
 		logger.info(joinPoint.getArgs()[0].toString());

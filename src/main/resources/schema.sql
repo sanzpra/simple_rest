@@ -1,0 +1,1 @@
+create schema IF not exists PACKLINK_CODE_CHALLENGE;

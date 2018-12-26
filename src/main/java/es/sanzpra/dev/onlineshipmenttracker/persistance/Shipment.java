@@ -39,12 +39,12 @@ public class Shipment {
     @JoinColumn(name = "SHIPMENT_REFERENCE", referencedColumnName = "SHIPMENT_REFERENCE")
     private List<Parcel> parcels;
    
-    
+ /*   
     public Shipment(List<Parcel> parcels) {
         super();
         this.parcels = parcels;
     }
-    
+ */   
     
   
 

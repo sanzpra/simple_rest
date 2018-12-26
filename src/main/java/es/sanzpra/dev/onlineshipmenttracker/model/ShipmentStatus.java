@@ -12,9 +12,9 @@ import lombok.Data;
 @AllArgsConstructor
 public class ShipmentStatus {
 	
-	/** The status code to send in the application event to dispatch  */
-	private String shipmentStatusCode;
 	/** The reference id of the shipment that we are tracking.  */
 	private String shipmentReference;
+	/** The status code to send in the application event to dispatch  */
+	private String shipmentStatusCode;
 
 }

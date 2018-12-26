@@ -35,7 +35,7 @@ public class Parcel {
     private int width;
     private int height;
     private int lenght;
-    
+/*
     public Parcel(String shipmentReference, int weight, int width, int height, int lenght) {
         super();
         this.weight = weight;
@@ -43,5 +43,5 @@ public class Parcel {
         this.height = height;
         this.lenght = lenght;
     }
-
+*/
 }

@@ -38,7 +38,7 @@ public class Tracking {
 	@Column(name="REFERENCE")
     private String reference;
       
-    
+/*   
     public Tracking(String status, int parcels, int weight, String reference) {
         super();
         this.status = status;
@@ -46,6 +46,6 @@ public class Tracking {
         this.weight = weight;
         this.reference = reference;
     }
-
+*/
 
 }
